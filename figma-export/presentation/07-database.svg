@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#F8FAFC" />
+  
+  <text x="120" y="160" font-family="Inter, sans-serif" font-size="64" font-weight="bold" fill="#0F172A">Database Schema (ER Diagram)</text>
+  <rect x="120" y="200" width="100" height="8" rx="4" fill="#2563EB" />
+  
+  <g transform="translate(200, 300)">
+    
+    <!-- Users -->
+    <g transform="translate(0, 0)">
+      <rect width="280" height="240" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" />
+      <rect width="280" height="50" rx="8" fill="#0F172A" />
+      <text x="140" y="32" font-family="Inter, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">users</text>
+      <text x="20" y="80" font-family="Inter, sans-serif" font-size="16" fill="#0F172A">PK  id (BIGINT)</text>
+      <text x="20" y="110" font-family="Inter, sans-serif" font-size="16" fill="#64748B">name (VARCHAR)</text>
+      <text x="20" y="140" font-family="Inter, sans-serif" font-size="16" fill="#64748B">email (VARCHAR)</text>
+      <text x="20" y="170" font-family="Inter, sans-serif" font-size="16" fill="#64748B">password (VARCHAR)</text>
+      <text x="20" y="200" font-family="Inter, sans-serif" font-size="16" fill="#64748B">role (VARCHAR)</text>
+    </g>
+
+    <!-- Products -->
+    <g transform="translate(0, 350)">
+      <rect width="280" height="270" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" />
+      <rect width="280" height="50" rx="8" fill="#0F172A" />
+      <text x="140" y="32" font-family="Inter, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">products</text>
+      <text x="20" y="80" font-family="Inter, sans-serif" font-size="16" fill="#0F172A">PK  id (BIGINT)</text>
+      <text x="20" y="110" font-family="Inter, sans-serif" font-size="16" fill="#64748B">name (VARCHAR)</text>
+      <text x="20" y="140" font-family="Inter, sans-serif" font-size="16" fill="#64748B">sku (VARCHAR)</text>
+      <text x="20" y="170" font-family="Inter, sans-serif" font-size="16" fill="#64748B">category (VARCHAR)</text>
+      <text x="20" y="200" font-family="Inter, sans-serif" font-size="16" fill="#64748B">price (DECIMAL)</text>
+      <text x="20" y="230" font-family="Inter, sans-serif" font-size="16" fill="#64748B">stock (INT)</text>
+    </g>
+
+    <!-- Sales -->
+    <g transform="translate(600, 0)">
+      <rect width="280" height="270" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" />
+      <rect width="280" height="50" rx="8" fill="#2563EB" />
+      <text x="140" y="32" font-family="Inter, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">sales</text>
+      <text x="20" y="80" font-family="Inter, sans-serif" font-size="16" fill="#0F172A">PK  id (BIGINT)</text>
+      <text x="20" y="110" font-family="Inter, sans-serif" font-size="16" fill="#0F172A">FK  cashier_id (BIGINT)</text>
+      <text x="20" y="140" font-family="Inter, sans-serif" font-size="16" fill="#64748B">transaction_id (VARCHAR)</text>
+      <text x="20" y="170" font-family="Inter, sans-serif" font-size="16" fill="#64748B">date (DATETIME)</text>
+      <text x="20" y="200" font-family="Inter, sans-serif" font-size="16" fill="#64748B">total (DECIMAL)</text>
+      <text x="20" y="230" font-family="Inter, sans-serif" font-size="16" fill="#64748B">payment_method</text>
+    </g>
+
+    <!-- Sale Items -->
+    <g transform="translate(1200, 150)">
+      <rect width="280" height="240" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" />
+      <rect width="280" height="50" rx="8" fill="#2563EB" />
+      <text x="140" y="32" font-family="Inter, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">sale_items</text>
+      <text x="20" y="80" font-family="Inter, sans-serif" font-size="16" fill="#0F172A">PK  id (BIGINT)</text>
+      <text x="20" y="110" font-family="Inter, sans-serif" font-size="16" fill="#0F172A">FK  sale_id (BIGINT)</text>
+      <text x="20" y="140" font-family="Inter, sans-serif" font-size="16" fill="#0F172A">FK  product_id (BIGINT)</text>
+      <text x="20" y="170" font-family="Inter, sans-serif" font-size="16" fill="#64748B">quantity (INT)</text>
+      <text x="20" y="200" font-family="Inter, sans-serif" font-size="16" fill="#64748B">price (DECIMAL)</text>
+    </g>
+
+    <!-- Lines -->
+    <!-- Users to Sales -->
+    <path d="M 280 120 L 600 120" stroke="#94A3B8" stroke-width="2" fill="none" />
+    <text x="440" y="110" font-family="Inter, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">1 : N</text>
+
+    <!-- Sales to Sale Items -->
+    <path d="M 880 120 L 1040 120 L 1040 270 L 1200 270" stroke="#94A3B8" stroke-width="2" fill="none" />
+    <text x="1040" y="110" font-family="Inter, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">1 : N</text>
+
+    <!-- Products to Sale Items -->
+    <path d="M 280 480 L 1200 480 L 1200 390" stroke="#94A3B8" stroke-width="2" fill="none" />
+    <text x="740" y="470" font-family="Inter, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">1 : N</text>
+
+  </g>
+</svg>

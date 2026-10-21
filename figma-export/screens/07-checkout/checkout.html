@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftPOS - Checkout</title>
+    <style>
+        body { margin: 0; font-family: 'Inter', sans-serif; background-color: rgba(15, 23, 42, 0.5); display: flex; align-items: center; justify-content: center; height: 100vh; }
+        .modal { width: 600px; background: #fff; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); display: flex; flex-direction: column; overflow: hidden; }
+        .modal-header { padding: 24px; border-bottom: 1px solid #E2E8F0; font-size: 20px; font-weight: bold; color: #0F172A; display: flex; justify-content: space-between; align-items: center; }
+        .close-btn { background: none; border: none; font-size: 24px; cursor: pointer; color: #64748B; }
+        .modal-body { padding: 24px; }
+        
+        .total-amount { text-align: center; font-size: 48px; font-weight: bold; color: #2563EB; margin-bottom: 32px; }
+        
+        .payment-methods { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+        .method-card { border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px; text-align: center; cursor: pointer; }
+        .method-card.active { border-color: #2563EB; background: #EFF6FF; }
+        .method-card .title { font-weight: 500; color: #0F172A; }
+        
+        .form-group { margin-bottom: 24px; }
+        .form-group label { display: block; font-size: 14px; color: #0F172A; margin-bottom: 8px; font-weight: 500; }
+        .form-group input { width: 100%; padding: 12px; border: 1px solid #E2E8F0; border-radius: 8px; font-size: 16px; box-sizing: border-box; }
+        
+        .change-due { display: flex; justify-content: space-between; font-size: 16px; font-weight: bold; color: #0F172A; margin-bottom: 32px; padding: 16px; background: #F8FAFC; border-radius: 8px; }
+        
+        .modal-footer { padding: 24px; background: #F8FAFC; border-top: 1px solid #E2E8F0; display: flex; gap: 16px; }
+        .btn { flex: 1; padding: 16px; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; border: none; }
+        .btn-secondary { background: #fff; border: 1px solid #E2E8F0; color: #0F172A; }
+        .btn-primary { background: #16A34A; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-header">
+            Checkout
+            <button class="close-btn">×</button>
+        </div>
+        <div class="modal-body">
+            <div class="total-amount">₹8,850</div>
+            
+            <div class="payment-methods">
+                <div class="method-card active">
+                    <div class="title">Cash</div>
+                </div>
+                <div class="method-card">
+                    <div class="title">Card</div>
+                </div>
+                <div class="method-card">
+                    <div class="title">UPI</div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Amount Received</label>
+                <input type="text" value="₹10,000">
+            </div>
+            
+            <div class="change-due">
+                <span>Change Due</span>
+                <span style="color:#16A34A;">₹1,150</span>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary">Cancel</button>
+            <button class="btn btn-primary">Complete Payment</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftPOS - Receipt</title>
+    <style>
+        body { margin: 0; font-family: 'Courier New', Courier, monospace; background-color: rgba(15, 23, 42, 0.5); display: flex; align-items: center; justify-content: center; height: 100vh; padding: 40px; box-sizing: border-box; }
+        .receipt { width: 350px; background: #fff; padding: 32px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); border-radius: 4px; font-size: 14px; color: #000; position: relative; }
+        .receipt::before { content: ""; position: absolute; top: -10px; left: 0; right: 0; height: 10px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><polygon points="0,10 5,0 10,10" fill="white"/></svg>') repeat-x; }
+        .receipt::after { content: ""; position: absolute; bottom: -10px; left: 0; right: 0; height: 10px; background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10"><polygon points="0,0 5,10 10,0" fill="white"/></svg>') repeat-x; }
+        .header { text-align: center; margin-bottom: 24px; border-bottom: 1px dashed #000; padding-bottom: 24px; }
+        .header h1 { margin: 0 0 8px 0; font-size: 24px; font-family: 'Inter', sans-serif; font-weight: bold; }
+        .header p { margin: 4px 0; }
+        .info { margin-bottom: 24px; border-bottom: 1px dashed #000; padding-bottom: 16px; }
+        .info-row { display: flex; justify-content: space-between; margin-bottom: 4px; }
+        .items { margin-bottom: 24px; border-bottom: 1px dashed #000; padding-bottom: 16px; }
+        .item { margin-bottom: 12px; }
+        .item-name { display: block; margin-bottom: 4px; }
+        .item-details { display: flex; justify-content: space-between; padding-left: 16px; }
+        .totals { margin-bottom: 24px; border-bottom: 1px dashed #000; padding-bottom: 16px; }
+        .total-row { display: flex; justify-content: space-between; margin-bottom: 8px; }
+        .total-row.grand-total { font-weight: bold; font-size: 18px; margin-top: 12px; padding-top: 12px; border-top: 1px solid #000; }
+        .footer { text-align: center; margin-top: 24px; }
+        .actions { position: absolute; right: -160px; top: 0; display: flex; flex-direction: column; gap: 16px; font-family: 'Inter', sans-serif; }
+        .btn { padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; border: none; text-align: center; width: 140px; }
+        .btn-primary { background: #2563EB; color: #fff; }
+        .btn-secondary { background: #fff; border: 1px solid #E2E8F0; color: #0F172A; }
+    </style>
+</head>
+<body>
+    <div class="receipt">
+        <div class="header">
+            <h1>SwiftPOS</h1>
+            <p>123 Retail Street</p>
+            <p>City, State, 12345</p>
+            <p>Tel: (555) 123-4567</p>
+        </div>
+        <div class="info">
+            <div class="info-row"><span>Date:</span><span>2026-10-01 10:45 AM</span></div>
+            <div class="info-row"><span>Txn ID:</span><span>#TRX-8924</span></div>
+            <div class="info-row"><span>Cashier:</span><span>Admin User</span></div>
+        </div>
+        <div class="items">
+            <div class="info-row" style="font-weight:bold; margin-bottom:8px;"><span>Item</span><span>Amount</span></div>
+            <div class="item">
+                <span class="item-name">Wireless Mouse</span>
+                <div class="item-details"><span>2 x ₹1,500</span><span>₹3,000</span></div>
+            </div>
+            <div class="item">
+                <span class="item-name">Mechanical Keyboard</span>
+                <div class="item-details"><span>1 x ₹4,500</span><span>₹4,500</span></div>
+            </div>
+        </div>
+        <div class="totals">
+            <div class="total-row"><span>Subtotal:</span><span>₹7,500</span></div>
+            <div class="total-row"><span>Tax (18%):</span><span>₹1,350</span></div>
+            <div class="total-row grand-total"><span>Total:</span><span>₹8,850</span></div>
+        </div>
+        <div class="totals">
+            <div class="total-row"><span>Payment Method:</span><span>Cash</span></div>
+            <div class="total-row"><span>Amount Tendered:</span><span>₹10,000</span></div>
+            <div class="total-row"><span>Change Due:</span><span>₹1,150</span></div>
+        </div>
+        <div class="footer">
+            <p>Thank you for shopping with us!</p>
+            <p>Please come again.</p>
+        </div>
+        
+        <div class="actions">
+            <button class="btn btn-primary">Print Receipt</button>
+            <button class="btn btn-secondary">Close</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <rect width="1440" height="900" fill="#F8FAFC" />
+  
+  <g transform="translate(520, 200)">
+    <rect width="400" height="460" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <!-- Shadow (Simplified) -->
+    <rect width="400" height="460" rx="12" fill="none" stroke="rgba(0,0,0,0.05)" stroke-width="4" transform="translate(0,4)" />
+    
+    <text x="200" y="60" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#2563EB" text-anchor="middle">SwiftPOS</text>
+    <text x="200" y="110" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#0F172A" text-anchor="middle">Welcome back</text>
+    <text x="200" y="140" font-family="Inter, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Sign in to your SwiftPOS account</text>
+    
+    <text x="40" y="190" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#0F172A">Email</text>
+    <rect x="40" y="200" width="320" height="44" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <text x="56" y="227" font-family="Inter, sans-serif" font-size="14" fill="#0F172A">admin@swiftpos.com</text>
+    
+    <text x="40" y="274" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#0F172A">Password</text>
+    <rect x="40" y="284" width="320" height="44" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <text x="56" y="311" font-family="Inter, sans-serif" font-size="14" fill="#0F172A">********</text>
+    
+    <rect x="40" y="348" width="16" height="16" rx="4" fill="#2563EB" />
+    <path d="M44 356 l4 4 l6 -8" stroke="#FFFFFF" stroke-width="2" fill="none" />
+    <text x="64" y="361" font-family="Inter, sans-serif" font-size="14" fill="#64748B">Remember me</text>
+    
+    <text x="360" y="361" font-family="Inter, sans-serif" font-size="14" fill="#2563EB" text-anchor="end">Forgot password?</text>
+    
+    <rect x="40" y="396" width="320" height="44" rx="8" fill="#2563EB" />
+    <text x="200" y="423" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#FFFFFF" text-anchor="middle">Sign In</text>
+  </g>
+</svg>

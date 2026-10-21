@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <rect width="1440" height="900" fill="#F8FAFC" />
+  
+  <!-- Sidebar -->
+  <rect width="240" height="900" fill="#0F172A" />
+  <text x="24" y="50" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF">SwiftPOS</text>
+  
+  <g transform="translate(16, 80)">
+    <text x="16" y="25" font-family="Inter, sans-serif" font-size="14" fill="#94A3B8">Dashboard</text>
+    <text x="16" y="73" font-family="Inter, sans-serif" font-size="14" fill="#94A3B8">POS</text>
+    <text x="16" y="121" font-family="Inter, sans-serif" font-size="14" fill="#94A3B8">Products</text>
+    <text x="16" y="169" font-family="Inter, sans-serif" font-size="14" fill="#94A3B8">Inventory</text>
+    
+    <rect y="200" width="208" height="40" rx="8" fill="#1E293B" />
+    <text x="16" y="225" font-family="Inter, sans-serif" font-size="14" fill="#FFFFFF">Sales History</text>
+    
+    <text x="16" y="273" font-family="Inter, sans-serif" font-size="14" fill="#94A3B8">Settings</text>
+  </g>
+
+  <!-- Main Content Area -->
+  <g transform="translate(240, 0)">
+    <!-- Header -->
+    <text x="32" y="60" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#0F172A">Sales History</text>
+    <rect x="1060" y="32" width="108" height="40" rx="8" fill="#2563EB" />
+    <text x="1114" y="57" font-family="Inter, sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle">Export Report</text>
+
+    <!-- Actions -->
+    <g transform="translate(32, 100)">
+      <rect width="300" height="44" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+      <text x="16" y="27" font-family="Inter, sans-serif" font-size="14" fill="#94A3B8">Search Transaction ID...</text>
+      
+      <rect x="316" y="0" width="120" height="44" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+      <text x="376" y="27" font-family="Inter, sans-serif" font-size="14" fill="#0F172A" text-anchor="middle">Date: Today</text>
+      
+      <rect x="452" y="0" width="140" height="44" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+      <text x="522" y="27" font-family="Inter, sans-serif" font-size="14" fill="#0F172A" text-anchor="middle">Payment: All</text>
+    </g>
+
+    <!-- Table -->
+    <g transform="translate(32, 176)">
+      <rect width="1136" height="280" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+      
+      <rect y="1" width="1136" height="48" fill="#F8FAFC" />
+      <path d="M 0 49 L 1136 49" stroke="#E2E8F0" stroke-width="1" fill="none" />
+      
+      <text x="24" y="30" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#64748B" text-transform="uppercase">Transaction ID</text>
+      <text x="200" y="30" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#64748B" text-transform="uppercase">Date &amp; Time</text>
+      <text x="450" y="30" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#64748B" text-transform="uppercase">Items</text>
+      <text x="600" y="30" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#64748B" text-transform="uppercase">Payment</text>
+      <text x="800" y="30" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#64748B" text-transform="uppercase">Amount</text>
+      <text x="1000" y="30" font-family="Inter, sans-serif" font-size="12" font-weight="500" fill="#64748B" text-transform="uppercase">Action</text>
+
+      <!-- Row 1 -->
+      <path d="M 0 119 L 1136 119" stroke="#E2E8F0" stroke-width="1" fill="none" />
+      <text x="24" y="90" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#0F172A">#TRX-8924</text>
+      <text x="200" y="90" font-family="Inter, sans-serif" font-size="14" fill="#0F172A">2026-10-01 10:45 AM</text>
+      <text x="450" y="90" font-family="Inter, sans-serif" font-size="14" fill="#0F172A">3 items</text>
+      <text x="600" y="90" font-family="Inter, sans-serif" font-size="14" fill="#0F172A">Cash</text>
+      <text x="800" y="90" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#0F172A">₹8,850</text>
+      <text x="1000" y="90" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#2563EB">View Receipt</text>
+
+      <!-- Row 2 -->
+      <path d="M 0 189 L 1136 189" stroke="#E2E8F0" stroke-width="1" fill="none" />
+      <text x="24" y="160" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#0F172A">#TRX-8923</text>
+      <text x="200" y="160" font-family="Inter, sans-serif" font-size="14" fill="#0F172A">2026-10-01 10:12 AM</text>
+      <text x="450" y="160" font-family="Inter, sans-serif" font-size="14" fill="#0F172A">1 item</text>
+      <text x="600" y="160" font-family="Inter, sans-serif" font-size="14" fill="#0F172A">Card</text>
+      <text x="800" y="160" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#0F172A">₹1,200</text>
+      <text x="1000" y="160" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#2563EB">View Receipt</text>
+
+      <!-- Row 3 -->
+      <path d="M 0 259 L 1136 259" stroke="#E2E8F0" stroke-width="1" fill="none" />
+      <text x="24" y="230" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#0F172A">#TRX-8922</text>
+      <text x="200" y="230" font-family="Inter, sans-serif" font-size="14" fill="#0F172A">2026-10-01 09:30 AM</text>
+      <text x="450" y="230" font-family="Inter, sans-serif" font-size="14" fill="#0F172A">5 items</text>
+      <text x="600" y="230" font-family="Inter, sans-serif" font-size="14" fill="#0F172A">UPI</text>
+      <text x="800" y="230" font-family="Inter, sans-serif" font-size="14" font-weight="bold" fill="#0F172A">₹15,500</text>
+      <text x="1000" y="230" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#2563EB">View Receipt</text>
+    </g>
+  </g>
+</svg>

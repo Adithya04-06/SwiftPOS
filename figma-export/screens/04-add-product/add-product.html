@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftPOS - Add Product</title>
+    <style>
+        body { margin: 0; font-family: 'Inter', sans-serif; background-color: #F8FAFC; display: flex; height: 100vh; }
+        .sidebar { width: 240px; background: #0F172A; color: #fff; padding: 24px; box-sizing: border-box; }
+        .sidebar .logo { font-size: 24px; font-weight: bold; color: #fff; margin-bottom: 40px; }
+        .nav-item { padding: 12px 16px; margin-bottom: 8px; border-radius: 8px; cursor: pointer; color: #94A3B8; }
+        .nav-item.active { background: #1E293B; color: #fff; }
+        .main-content { flex: 1; padding: 32px; box-sizing: border-box; overflow-y: auto; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px; }
+        .header h1 { margin: 0; font-size: 24px; color: #0F172A; }
+        
+        .form-card { background: #fff; border: 1px solid #E2E8F0; border-radius: 12px; padding: 32px; max-width: 600px; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .form-group { margin-bottom: 24px; }
+        .form-group.full { grid-column: 1 / -1; }
+        .form-group label { display: block; font-size: 14px; font-weight: 500; color: #0F172A; margin-bottom: 8px; }
+        .form-group input, .form-group select { width: 100%; padding: 12px; border: 1px solid #E2E8F0; border-radius: 8px; font-size: 14px; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        
+        .actions { display: flex; justify-content: flex-end; gap: 16px; margin-top: 32px; padding-top: 24px; border-top: 1px solid #E2E8F0; }
+        .btn { padding: 12px 24px; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; border: none; }
+        .btn-secondary { background: #fff; border: 1px solid #E2E8F0; color: #0F172A; }
+        .btn-primary { background: #2563EB; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">SwiftPOS</div>
+        <div class="nav-item">Dashboard</div>
+        <div class="nav-item">POS</div>
+        <div class="nav-item active">Products</div>
+        <div class="nav-item">Inventory</div>
+        <div class="nav-item">Sales History</div>
+        <div class="nav-item">Settings</div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h1>Add New Product</h1>
+        </div>
+        
+        <div class="form-card">
+            <div class="form-grid">
+                <div class="form-group full">
+                    <label>Product Name</label>
+                    <input type="text" placeholder="e.g. Wireless Mouse">
+                </div>
+                <div class="form-group">
+                    <label>SKU (Stock Keeping Unit)</label>
+                    <input type="text" placeholder="e.g. MOU-002">
+                </div>
+                <div class="form-group">
+                    <label>Category</label>
+                    <select>
+                        <option>Electronics</option>
+                        <option>Accessories</option>
+                        <option>Audio</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Price (₹)</label>
+                    <input type="number" placeholder="0.00">
+                </div>
+                <div class="form-group">
+                    <label>Initial Stock Quantity</label>
+                    <input type="number" placeholder="0">
+                </div>
+                <div class="form-group">
+                    <label>Low Stock Threshold</label>
+                    <input type="number" placeholder="5">
+                </div>
+            </div>
+            
+            <div class="actions">
+                <button class="btn btn-secondary">Cancel</button>
+                <button class="btn btn-primary">Save Product</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

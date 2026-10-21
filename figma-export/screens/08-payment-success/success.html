@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftPOS - Payment Success</title>
+    <style>
+        body { margin: 0; font-family: 'Inter', sans-serif; background-color: rgba(15, 23, 42, 0.5); display: flex; align-items: center; justify-content: center; height: 100vh; }
+        .modal { width: 480px; background: #fff; border-radius: 12px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); display: flex; flex-direction: column; align-items: center; padding: 48px; box-sizing: border-box; }
+        .success-icon { width: 80px; height: 80px; background: #DCFCE7; color: #16A34A; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 40px; margin-bottom: 24px; }
+        h1 { margin: 0 0 8px 0; font-size: 24px; color: #0F172A; }
+        p { margin: 0 0 32px 0; color: #64748B; font-size: 14px; text-align: center; }
+        .details { width: 100%; background: #F8FAFC; border-radius: 8px; padding: 16px; margin-bottom: 32px; font-size: 14px; }
+        .detail-row { display: flex; justify-content: space-between; margin-bottom: 12px; }
+        .detail-row:last-child { margin-bottom: 0; }
+        .detail-row span:first-child { color: #64748B; }
+        .detail-row span:last-child { color: #0F172A; font-weight: 500; }
+        .actions { display: flex; gap: 16px; width: 100%; }
+        .btn { flex: 1; padding: 16px; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; border: none; text-align: center; }
+        .btn-secondary { background: #fff; border: 1px solid #E2E8F0; color: #0F172A; }
+        .btn-primary { background: #2563EB; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <div class="success-icon">✓</div>
+        <h1>Payment Successful</h1>
+        <p>The transaction has been completed successfully.</p>
+        
+        <div class="details">
+            <div class="detail-row">
+                <span>Transaction ID</span>
+                <span>#TRX-8924</span>
+            </div>
+            <div class="detail-row">
+                <span>Amount</span>
+                <span style="font-size: 16px; font-weight: bold;">₹8,850</span>
+            </div>
+            <div class="detail-row">
+                <span>Payment Method</span>
+                <span>Cash</span>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <button class="btn btn-secondary">New Sale</button>
+            <button class="btn btn-primary">View Receipt</button>
+        </div>
+    </div>
+</body>
+</html>

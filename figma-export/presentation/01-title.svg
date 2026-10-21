@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#0F172A" />
+  <rect x="0" y="0" width="1920" height="1080" fill="url(#grad)" />
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+  
+  <text x="960" y="480" font-family="Inter, sans-serif" font-size="96" font-weight="bold" fill="#FFFFFF" text-anchor="middle">SwiftPOS</text>
+  <text x="960" y="560" font-family="Inter, sans-serif" font-size="36" fill="#94A3B8" text-anchor="middle">Modern Point of Sale &amp; Inventory Management System</text>
+  <rect x="910" y="620" width="100" height="8" rx="4" fill="#2563EB" />
+</svg>

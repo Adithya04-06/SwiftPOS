@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <rect width="1440" height="900" fill="rgba(15, 23, 42, 0.5)" />
+  
+  <g transform="translate(545, 50)">
+    <rect width="350" height="800" fill="#FFFFFF" />
+    <!-- Zigzag edges logic omitted for brevity in SVG, using solid block -->
+    
+    <g font-family="Courier New, monospace" font-size="14" fill="#000000">
+      <!-- Header -->
+      <text x="175" y="50" font-family="Inter, sans-serif" font-size="24" font-weight="bold" text-anchor="middle">SwiftPOS</text>
+      <text x="175" y="75" text-anchor="middle">123 Retail Street</text>
+      <text x="175" y="95" text-anchor="middle">City, State, 12345</text>
+      <text x="175" y="115" text-anchor="middle">Tel: (555) 123-4567</text>
+      
+      <path d="M 32 140 L 318 140" stroke="#000000" stroke-width="1" stroke-dasharray="4" fill="none" />
+      
+      <!-- Info -->
+      <text x="32" y="170">Date:</text>
+      <text x="318" y="170" text-anchor="end">2026-10-01 10:45 AM</text>
+      
+      <text x="32" y="190">Txn ID:</text>
+      <text x="318" y="190" text-anchor="end">#TRX-8924</text>
+      
+      <text x="32" y="210">Cashier:</text>
+      <text x="318" y="210" text-anchor="end">Admin User</text>
+      
+      <path d="M 32 230 L 318 230" stroke="#000000" stroke-width="1" stroke-dasharray="4" fill="none" />
+      
+      <!-- Items -->
+      <text x="32" y="260" font-weight="bold">Item</text>
+      <text x="318" y="260" font-weight="bold" text-anchor="end">Amount</text>
+      
+      <text x="32" y="290">Wireless Mouse</text>
+      <text x="48" y="310">2 x ₹1,500</text>
+      <text x="318" y="310" text-anchor="end">₹3,000</text>
+      
+      <text x="32" y="340">Mechanical Keyboard</text>
+      <text x="48" y="360">1 x ₹4,500</text>
+      <text x="318" y="360" text-anchor="end">₹4,500</text>
+      
+      <path d="M 32 390 L 318 390" stroke="#000000" stroke-width="1" stroke-dasharray="4" fill="none" />
+      
+      <!-- Totals -->
+      <text x="32" y="420">Subtotal:</text>
+      <text x="318" y="420" text-anchor="end">₹7,500</text>
+      
+      <text x="32" y="440">Tax (18%):</text>
+      <text x="318" y="440" text-anchor="end">₹1,350</text>
+      
+      <path d="M 32 460 L 318 460" stroke="#000000" stroke-width="1" fill="none" />
+      
+      <text x="32" y="490" font-size="18" font-weight="bold">Total:</text>
+      <text x="318" y="490" font-size="18" font-weight="bold" text-anchor="end">₹8,850</text>
+      
+      <path d="M 32 520 L 318 520" stroke="#000000" stroke-width="1" stroke-dasharray="4" fill="none" />
+      
+      <!-- Payment info -->
+      <text x="32" y="550">Payment Method:</text>
+      <text x="318" y="550" text-anchor="end">Cash</text>
+      
+      <text x="32" y="570">Amount Tendered:</text>
+      <text x="318" y="570" text-anchor="end">₹10,000</text>
+      
+      <text x="32" y="590">Change Due:</text>
+      <text x="318" y="590" text-anchor="end">₹1,150</text>
+      
+      <path d="M 32 620 L 318 620" stroke="#000000" stroke-width="1" stroke-dasharray="4" fill="none" />
+      
+      <!-- Footer -->
+      <text x="175" y="660" text-anchor="middle">Thank you for shopping with us!</text>
+      <text x="175" y="680" text-anchor="middle">Please come again.</text>
+    </g>
+    
+    <!-- Action buttons beside receipt -->
+    <g transform="translate(380, 0)">
+      <rect width="140" height="44" rx="8" fill="#2563EB" />
+      <text x="70" y="27" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Print Receipt</text>
+      
+      <rect y="60" width="140" height="44" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+      <text x="70" y="87" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#0F172A" text-anchor="middle">Close</text>
+    </g>
+  </g>
+</svg>

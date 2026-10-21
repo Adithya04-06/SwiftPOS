@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#F8FAFC" />
+  
+  <text x="120" y="160" font-family="Inter, sans-serif" font-size="64" font-weight="bold" fill="#0F172A">The Problem</text>
+  <rect x="120" y="200" width="100" height="8" rx="4" fill="#2563EB" />
+  
+  <g transform="translate(120, 320)">
+    <rect width="500" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" />
+    <text x="40" y="60" font-family="Inter, sans-serif" font-size="48" font-weight="bold" fill="#DC2626">01</text>
+    <text x="40" y="140" font-family="Inter, sans-serif" font-size="32" font-weight="bold" fill="#0F172A">Inefficient Checkout</text>
+    <text x="40" y="200" font-family="Inter, sans-serif" font-size="20" fill="#64748B" font-style="italic">Slow manual entry leads to long queues</text>
+  </g>
+
+  <g transform="translate(680, 320)">
+    <rect width="500" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" />
+    <text x="40" y="60" font-family="Inter, sans-serif" font-size="48" font-weight="bold" fill="#DC2626">02</text>
+    <text x="40" y="140" font-family="Inter, sans-serif" font-size="32" font-weight="bold" fill="#0F172A">Stock Discrepancies</text>
+    <text x="40" y="200" font-family="Inter, sans-serif" font-size="20" fill="#64748B" font-style="italic">No real-time synchronization of inventory</text>
+  </g>
+
+  <g transform="translate(1240, 320)">
+    <rect width="500" height="300" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2" />
+    <text x="40" y="60" font-family="Inter, sans-serif" font-size="48" font-weight="bold" fill="#DC2626">03</text>
+    <text x="40" y="140" font-family="Inter, sans-serif" font-size="32" font-weight="bold" fill="#0F172A">Poor Analytics</text>
+    <text x="40" y="200" font-family="Inter, sans-serif" font-size="20" fill="#64748B" font-style="italic">Lack of insights into daily sales performance</text>
+  </g>
+</svg>

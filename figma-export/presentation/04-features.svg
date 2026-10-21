@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#F8FAFC" />
+  
+  <text x="120" y="160" font-family="Inter, sans-serif" font-size="64" font-weight="bold" fill="#0F172A">Core Features</text>
+  <rect x="120" y="200" width="100" height="8" rx="4" fill="#2563EB" />
+  
+  <g transform="translate(120, 320)">
+    <rect width="800" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="40" y="65" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#2563EB">❖  Point of Sale Terminal</text>
+  </g>
+
+  <g transform="translate(120, 480)">
+    <rect width="800" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="40" y="65" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#2563EB">❖  Product Management</text>
+  </g>
+
+  <g transform="translate(120, 640)">
+    <rect width="800" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="40" y="65" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#2563EB">❖  Low Stock Alerts</text>
+  </g>
+  
+  <g transform="translate(1000, 320)">
+    <rect width="800" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="40" y="65" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#2563EB">❖  Sales History &amp; Receipts</text>
+  </g>
+
+  <g transform="translate(1000, 480)">
+    <rect width="800" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="40" y="65" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#2563EB">❖  Role-based Access (Admin/Cashier)</text>
+  </g>
+
+  <g transform="translate(1000, 640)">
+    <rect width="800" height="120" rx="12" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="40" y="65" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#2563EB">❖  Business Analytics</text>
+  </g>
+</svg>

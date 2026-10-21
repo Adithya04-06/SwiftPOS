@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+  <rect width="1440" height="900" fill="rgba(15, 23, 42, 0.5)" />
+  
+  <g transform="translate(420, 150)">
+    <rect width="600" height="600" rx="12" fill="#FFFFFF" />
+    
+    <!-- Header -->
+    <text x="24" y="45" font-family="Inter, sans-serif" font-size="20" font-weight="bold" fill="#0F172A">Checkout</text>
+    <text x="560" y="45" font-family="Inter, sans-serif" font-size="24" fill="#64748B">×</text>
+    <rect width="600" height="1" fill="#E2E8F0" y="70" />
+    
+    <!-- Body -->
+    <text x="300" y="140" font-family="Inter, sans-serif" font-size="48" font-weight="bold" fill="#2563EB" text-anchor="middle">₹8,850</text>
+    
+    <!-- Payment Methods -->
+    <g transform="translate(24, 200)">
+      <rect width="170" height="60" rx="8" fill="#EFF6FF" stroke="#2563EB" />
+      <text x="85" y="35" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#0F172A" text-anchor="middle">Cash</text>
+      
+      <rect x="186" y="0" width="170" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+      <text x="271" y="35" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#0F172A" text-anchor="middle">Card</text>
+      
+      <rect x="372" y="0" width="170" height="60" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+      <text x="457" y="35" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#0F172A" text-anchor="middle">UPI</text>
+    </g>
+    
+    <text x="24" y="310" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#0F172A">Amount Received</text>
+    <rect x="24" y="320" width="552" height="48" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="40" y="350" font-family="Inter, sans-serif" font-size="16" fill="#0F172A">₹10,000</text>
+    
+    <rect x="24" y="400" width="552" height="60" rx="8" fill="#F8FAFC" />
+    <text x="40" y="435" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#0F172A">Change Due</text>
+    <text x="560" y="435" font-family="Inter, sans-serif" font-size="16" font-weight="bold" fill="#16A34A" text-anchor="end">₹1,150</text>
+    
+    <!-- Footer -->
+    <rect y="500" width="600" height="100" fill="#F8FAFC" />
+    <rect width="600" height="1" fill="#E2E8F0" y="500" />
+    
+    <rect x="24" y="524" width="268" height="52" rx="8" fill="#FFFFFF" stroke="#E2E8F0" />
+    <text x="158" y="555" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#0F172A" text-anchor="middle">Cancel</text>
+    
+    <rect x="308" y="524" width="268" height="52" rx="8" fill="#16A34A" />
+    <text x="442" y="555" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">Complete Payment</text>
+    
+  </g>
+</svg>
